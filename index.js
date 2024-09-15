@@ -13,4 +13,6 @@ app.use('/api/news', newsRouter);
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
+  console.log(process.env.GNEWS_API_KEY); // This should print your API key
+
 });
